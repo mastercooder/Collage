@@ -1,3 +1,6 @@
+// BinarySearch
+//--------------
+
 #include<stdio.h>
 
 void makeArray(int *arr, int size){

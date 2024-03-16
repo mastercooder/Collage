@@ -1,4 +1,5 @@
-// All Operation of Linked List Deletion
+//  All Operation of Linked List Deletion
+//-----------------------------------------
 
 #include <stdio.h>
 #include <stdlib.h>
