@@ -1,4 +1,5 @@
-// Inseration in Linked List
+//  Inseration in Linked List
+//-----------------------------
 
 #include<stdio.h>
 #include<stdlib.h>

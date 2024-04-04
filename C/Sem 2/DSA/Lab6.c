@@ -1,4 +1,5 @@
-// All Sorting Algorithm 
+//  All Sorting Algorithm
+//-------------------------- 
 
 #include<stdio.h>
 #include<stdlib.h>
