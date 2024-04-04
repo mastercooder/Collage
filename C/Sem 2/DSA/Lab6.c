@@ -156,7 +156,7 @@ void margeSort(int *A, int low, int high){
 
 void Opeartion(){
     printf("\n");
-    printf("  You can sort the above Array in the following ways: \n");
+    printf("  You can sort the above Array in the following ways:\n");
     printf("------------------------------------------------------\n");
     printf("1: bubbleSort\n");
     printf("2: insertionSort\n");
@@ -265,3 +265,4 @@ int main(){
     printf("\n");
     return 0;
 }
+
