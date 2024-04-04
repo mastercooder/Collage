@@ -1,3 +1,5 @@
+// Binary Tree Representation 
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -41,6 +43,5 @@ int main(){
     printf(" Traversal\n");
     printf("------------\n");
     binaryTreeTraversal(p);
-    printf("\n");
     return 0;
 }
