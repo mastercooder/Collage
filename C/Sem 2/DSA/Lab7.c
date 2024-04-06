@@ -1,18 +1,16 @@
-//  Inseration in Linked List
-//-----------------------------
+//  Inseration in Circular Linked List
+//--------------------------------------
 
 #include<stdio.h>
 #include<stdlib.h>
 
-struct Node
-{
+struct Node{
     int data;
     struct Node* next;
 };
 
 // Linked List Traversal
-void linkedListTraversal(struct Node* head)
-{
+void linkedListTraversal(struct Node* head){
     struct Node* ptr = head;
     do
     {
@@ -22,8 +20,7 @@ void linkedListTraversal(struct Node* head)
 }
 
 // Case 1: Insertion At First
-struct Node* insertionAtFirst(struct Node* head, int data)
-{
+struct Node* insertionAtFirst(struct Node* head, int data){
     struct Node* ptr = (struct Node*)malloc(sizeof(struct Node));
     struct Node* p = head->next;
     ptr->data = data;
@@ -38,8 +35,7 @@ struct Node* insertionAtFirst(struct Node* head, int data)
 };
 
 // Case 2: Insertion At Index
-struct Node* insertionAtIndex(struct Node* head, int data, int index)
-{
+struct Node* insertionAtIndex(struct Node* head, int data, int index){
     struct Node* ptr = (struct Node*)malloc(sizeof(struct Node));
     struct Node* p = head;
     ptr->data = data;
@@ -55,8 +51,7 @@ struct Node* insertionAtIndex(struct Node* head, int data, int index)
 };
 
 // Insertion At End
-struct Node* insertionAtEnd(struct Node* head, int data)
-{
+struct Node* insertionAtEnd(struct Node* head, int data){
     struct Node* ptr = (struct Node*)malloc(sizeof(struct Node));
     struct Node* p = head;
     ptr->data = data;
