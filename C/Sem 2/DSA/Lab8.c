@@ -44,5 +44,6 @@ int main(){
     printf(" Traversal\n");
     printf("------------\n");
     binaryTreeTraversal(p);
+    
     return 0;
 }

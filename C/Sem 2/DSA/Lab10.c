@@ -53,6 +53,5 @@ int main() {
 
     printf("\n");
     displayArray(arr, size);
-
     return 0;
 }

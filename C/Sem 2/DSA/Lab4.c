@@ -4,14 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node
-{
+struct Node{
     int data;
     struct Node *next;
 };
 
-void Operation()
-{
+void Operation(){
     printf("\n");
     printf("1: Linked List Traversal\n");
     printf("2: Linked List Opeartion\n");
@@ -21,8 +19,7 @@ void Operation()
     printf("\n");
 }
 
-void linkelistTraversal(struct Node *ptr)
-{
+void linkelistTraversal(struct Node *ptr){
     while (ptr != NULL)
     {
         printf("Element %d\n", ptr->data);
@@ -31,16 +28,14 @@ void linkelistTraversal(struct Node *ptr)
 }
 
 // All Insertion Operation
-struct Node *insertinFirst(struct Node *head, int data)
-{
+struct Node *insertinFirst(struct Node *head, int data){
     struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
     ptr->data = data;
     ptr->next = head;
     return ptr;
 };
 
-struct Node *insertinIndex(struct Node *head, int index, int data)
-{
+struct Node *insertinIndex(struct Node *head, int index, int data){
     struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
     struct Node *p = head;
     int i = 0;
@@ -55,8 +50,7 @@ struct Node *insertinIndex(struct Node *head, int index, int data)
     return head;
 };
 
-struct Node *insertinEnd(struct Node *head, int data)
-{
+struct Node *insertinEnd(struct Node *head, int data){
     struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
     struct Node *p = head;
     while (p->next != NULL)
@@ -69,8 +63,7 @@ struct Node *insertinEnd(struct Node *head, int data)
     return head;
 };
 
-int main()
-{
+int main(){
     struct Node *head = (struct Node *)malloc(sizeof(struct Node));
     struct Node *second = (struct Node *)malloc(sizeof(struct Node));
     struct Node *third = (struct Node *)malloc(sizeof(struct Node));
@@ -102,22 +95,18 @@ int main()
     Operation();
     printf("\n");
 
-    while (1)
-    {
+    while (1){
         int query;
         printf("Enter the number of Opeations || 0 to Exit: ");
         scanf("%d", &query);
 
-        if (query == 0)
-        {
+        if (query == 0){
             printf("Exiting The loop\n");
             return -1;
         }
 
-        switch (query)
-        {
-        case 1:
-        {
+        switch (query){
+        case 1:{
             printf("\n");
             printf(" Linked List Traveral\n");
             printf("-----------------------\n");
@@ -127,8 +116,7 @@ int main()
             break;
         }
 
-        case 2:
-        {
+        case 2:{
             printf("\n");
             printf(" Linked List Opearations\n");
             printf("--------------------------\n");
@@ -138,8 +126,7 @@ int main()
             break;
         }
 
-        case 3:
-        {
+        case 3:{
             printf("\n");
             printf(" Insert At First\n");
             printf("-------------------\n");
@@ -153,8 +140,7 @@ int main()
             break;
         }
 
-        case 4:
-        {
+        case 4:{
             printf("\n");
             printf(" Insert At Index\n");
             printf("-------------------\n");
@@ -170,8 +156,7 @@ int main()
             break;
         }
 
-        case 5:
-        {
+        case 5:{
             printf("\n");
             printf(" Insert At End\n");
             printf("-----------------\n");

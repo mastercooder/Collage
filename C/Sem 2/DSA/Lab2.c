@@ -1,5 +1,5 @@
-// linearSearch
-//--------------
+//  linearSearch
+//----------------
 
 #include<stdio.h>
 

@@ -266,6 +266,7 @@ int main(){
 
     printf("Enter a new Array: \n");
     printf("\n");
+    
     return 0;
 }
 

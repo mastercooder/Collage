@@ -1,4 +1,4 @@
-// Q. Write a program to count the frequency of an element of an array ?
+// Q. Write a program to count the frequency of an element of an array?
 
 #include<stdio.h>
 

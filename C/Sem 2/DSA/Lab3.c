@@ -1,5 +1,5 @@
-// BinarySearch
-//--------------
+//  BinarySearch
+//----------------
 
 #include<stdio.h>
 

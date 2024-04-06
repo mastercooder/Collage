@@ -31,6 +31,5 @@ int main() {
 
     printf("\n");
     printf("Total number of duplicate elements found in array = %d", count);
-
     return 0;
 }

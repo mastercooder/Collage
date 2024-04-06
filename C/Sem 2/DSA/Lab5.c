@@ -4,14 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node
-{
+struct Node{
     int data;
     struct Node *next;
 };
 
-void Operation()
-{
+void Operation(){
     printf("\n");
     printf("1: Linked List Traversal\n");
     printf("2: Linked List Opeartion\n");
@@ -21,8 +19,7 @@ void Operation()
     printf("\n");
 }
 
-void linkelistTraversal(struct Node *ptr)
-{
+void linkelistTraversal(struct Node *ptr){
     while (ptr != NULL)
     {
         printf("Element %d\n", ptr->data);
@@ -31,16 +28,14 @@ void linkelistTraversal(struct Node *ptr)
 }
 
 // Deleting Operations
-struct Node *deletefromFirst(struct Node *head)
-{
+struct Node *deletefromFirst(struct Node *head){
     struct Node *ptr = head;
     head = head->next;
     free(ptr);
     return head;
 };
 
-struct Node *deletefromIndex(struct Node *head, int index)
-{
+struct Node *deletefromIndex(struct Node *head, int index){
     if (index == 0)
     {
         struct Node *ptr = head;
@@ -63,8 +58,7 @@ struct Node *deletefromIndex(struct Node *head, int index)
     return head;
 };
 
-struct Node *deletefromEnd(struct Node *head)
-{
+struct Node *deletefromEnd(struct Node *head){
     struct Node *ptr = head;
     struct Node *p = NULL;
     while (ptr->next != NULL)
@@ -78,8 +72,7 @@ struct Node *deletefromEnd(struct Node *head)
 };
 
 
-int main()
-{
+int main(){
     struct Node *head = (struct Node *)malloc(sizeof(struct Node));
     struct Node *second = (struct Node *)malloc(sizeof(struct Node));
     struct Node *third = (struct Node *)malloc(sizeof(struct Node));
