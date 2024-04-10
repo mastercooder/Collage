@@ -93,6 +93,7 @@ int main() {
         if(query==0){
             printf("\n");
             printf("Exiting the loop\n");
+            return -1;
             printf("\n");
         }
 
