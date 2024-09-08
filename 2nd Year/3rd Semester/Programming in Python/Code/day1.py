@@ -1,7 +1,8 @@
-# Q1. Write a Program to print Hello world n times ?
-# Q2. Write a program to print the sum of n numbers ?
-# Q3. Write a program to calculate factorial of a given value ?
-
+print('''
+Q1. Write a Program to print Hello world n times ?
+Q2. Write a program to print the sum of n numbers ?
+Q3. Write a program to calculate factorial of a given value ?
+''')
 while(True):
     print()
     query = int(input("Enter the question number: "))

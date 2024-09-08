@@ -1,9 +1,13 @@
-# Q1. Write a program to accept a number and print in reverse order ?
-# Q2. Write a program to check weather a number is a Palindrome or not ?
-# Q3. Write a program to check weather a number is a Armstrong Number ? 
-# HW
-# Q1. Write a Program to accept a number & print its Table ?
-# Q2. Write a Program to Calculate the squate root of any Number ?
+print('''
+Q1. Write a program to accept a number and print in reverse order ?
+Q2. Write a program to check weather a number is a Palindrome or not ?
+Q3. Write a program to check weather a number is a Armstrong Number ? 
+HW
+Q1. Write a Program to accept a number & print its Table ?
+Q2. Write a Program to Calculate the squate root of any Number ?
+''')
+
+
 while(True):
     query = int(input("Enter the Question Number: "))
     print()
