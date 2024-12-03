@@ -17,6 +17,10 @@ def main():
     random_list = [random.randint(1, n) for _ in range(n)]
     random_tuple = tuple(random.randint(1, n) for _ in range(n))
     
+    # random_String = "tejesh"
+    # random_list = [4, 6, 6, 8, 3, 6]
+    # random_tuple = (1, 6, 3, 6, 7, 3)
+    
     print()
     print("Before Sorting")
     print("String = ", random_String)
