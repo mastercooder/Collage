@@ -1,4 +1,4 @@
-// Q. Write a program to count the frequency of an element of an array?
+// Q. Write a program to count the frequency of an element of an array ?
 
 #include<stdio.h>
 
@@ -20,4 +20,5 @@ int main(){
     }
 
     printf("%d has occur in the array %d times.\n", key, freq);
+    return 0;
 }
