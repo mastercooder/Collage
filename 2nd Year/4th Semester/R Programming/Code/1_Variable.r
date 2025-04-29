@@ -1,8 +1,8 @@
 a <- 5
 b <- 6 
 
-print(a+b)
 c <- a+b
+print(c)
 
 print("Sqrt")
-sqrt(16)
+print(sqrt(16))
