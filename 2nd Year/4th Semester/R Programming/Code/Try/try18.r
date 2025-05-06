@@ -1,0 +1,1 @@
+plot(x = 1:10, y = rnorm(10), type = "b", main = "Basic Plot", xlab = "X-axis", ylab = "Y-axis")

@@ -1,19 +1,21 @@
-# Create a list
-my_person <- list(name = "Alice", age = 30)
-
-# Assign a class attribute
-class(my_person) <- "person"
-
-print(my_person)
-print(class(my_person))
-
-# Generic function (already exists in R)
-print(my_person)
-
-# Create a class-specific print method
-print.person <- function(obj) {
-  cat("Person: Name =", obj$name, ", Age =", obj$age, "\n")
+# Creating an S3 object (based on a list)
+create_person <- function(name, age) {
+  person <- list(name = name, age = age)
+  class(person) <- "person"
+  return(person)
 }
 
-# Now print() will use the person-specific method
-print(my_person)
+my_person <- create_person("Alice", 30)
+print(my_person) # Initially prints like a list
+
+# Defining a class-specific print method
+print.person <- function(obj) {
+  cat("S3 Person: Name =", obj$name, ", Age =", obj$age, "\n")
+}
+
+print(my_person) # Now uses the print.person method
+
+# Defining another generic function and a method
+greet <- function(obj) UseMethod("greet")
+greet.person <- function(obj) cat("Hello,", obj$name, "!\n")
+greet(my_person)

@@ -1,0 +1,33 @@
+string1 <- "Hello World"
+length1 <- nchar(string1)
+print(length1) # Output: 11
+
+string2 <- "R Programming"
+length2 <- nchar(string2)
+print(length2) # Output: 13
+
+
+my_string <- "Hello World"
+substring1 <- substr(my_string, 1, 5)
+print(substring1) # Output: "Hello"
+
+substring2 <- substr(my_string, 7, 11)
+print(substring2) # Output: "World"
+
+substring3 <- substr(my_string, 7, nchar(my_string)) # From 7th to the end
+print(substring3) # Output: "World"
+
+
+my_string2 <- "apple,banana,cherry"
+split_string1 <- strsplit(my_string2, ",")
+print(split_string1)
+# Output:
+# [[1]]
+# [1] "apple"  "banana" "cherry"
+
+my_string3 <- "one two three"
+split_string2 <- strsplit(my_string3, " ")
+print(split_string2)
+# Output:
+# [[1]]
+# [1] "one"   "two"   "three"
