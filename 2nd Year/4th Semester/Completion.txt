@@ -1,0 +1,16 @@
+Completion
+
+R Programming
+-> Experiments
+
+Cloud Computing
+-> 2 Unit
+
+Cloud Computing and it's security
+-> unit 3
+
+Big Data 
+-> 1 Unit
+
+Machine Learning 
+-> 2 Unit
