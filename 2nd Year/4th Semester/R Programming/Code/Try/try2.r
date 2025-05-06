@@ -1,0 +1,10 @@
+cat("\nQuestion 2\n")
+cat("a.\n")
+my_list <- list(a = 1, b = 2, c = 3)
+result <- lapply(my_list, function(x) x^2)
+print(result)
+
+cat("\nb.\n")
+my_list2 <- list(a = 1, b = 2, c = 3)
+result2 <- sapply(my_list2, function(x) x^2)
+print(result2)
