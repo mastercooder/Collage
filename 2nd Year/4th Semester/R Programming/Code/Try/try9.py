@@ -45,5 +45,5 @@ print("3X3 Array")
 array_3D = np.random.randint(1, 10, size=[2, 3, 4])
 print(array_3D)
 print()
-slicsed_array = array_3D[1  , 0, :]
+slicsed_array = array_3D[1  , :, :]
 print(slicsed_array)
